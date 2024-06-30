@@ -1,0 +1,114 @@
+.navbar {
+  background-color: var(--dark-gray);
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  padding: 2rem 0;
+}
+
+.navbar .container .logo img {
+  width: 6rem;
+}
+
+.navbar .container .nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbar .container .nav-menu li .anchor-link {
+  cursor: pointer;
+  color: var(--white);
+}
+
+.navbar .container .nav-menu li .anchor-link:active,
+.navbar .container .nav-menu li .anchor-link:hover,
+.navbar .container .nav-menu li .anchor-link:focus
+{
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar .container .nav-connect button {
+  padding: 1.5rem 2rem;
+  border-radius: 5rem;
+  background: var(--gradient);
+  cursor: pointer;
+  color: var(--white);
+  transition: 0.5s;
+}
+
+.navbar .container .nav-connect button:hover {
+  transform: scale(1.05);
+}
+
+.nav-underline {
+  display: block;
+  width: 3rem;
+  margin: 0 auto;
+}
+
+.navbar .container .nav-menu li .nav-mob-close {
+  display: none;
+}
+
+.navbar .container .nav-mob-open {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar .container .nav-connect {
+    display: none;
+  }
+
+  .navbar .container .nav-mob-open {
+    display: block;
+    color: var(--white);
+    font-size: 2.5rem;
+  }
+
+  .navbar .container .nav-menu li .nav-mob-close {
+    display: block;
+    color: var(--white);
+    font-size: 2.5rem;
+  }
+
+  .navbar .container .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    gap: 3rem;
+    background-color: var(--dark-violet);
+    width: 35rem;
+    height: 100%;
+    z-index: 999;
+    transition: right 0.5s;
+    right: -35rem;
+  }
+
+  .nav-menu li {
+    font-size: 3rem;
+    padding: 0 4rem;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .nav-menu li:nth-child(1) {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-top: 3rem;
+  }
+}

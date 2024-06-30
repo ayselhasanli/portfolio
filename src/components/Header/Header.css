@@ -1,0 +1,101 @@
+.header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.header .container img {
+  border-radius: 100%;
+  margin-top: 3rem;
+  width: 25rem;
+}
+
+.header .container h1 {
+  text-align: center;
+  width: 75%;
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.header .container h1 span {
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header .container p {
+  width: 60%;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 4rem;
+}
+
+.header .container .header-action {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+  font-size: 1.8rem;
+}
+
+.header .container .header-action .header-connect {
+  padding: 1.5rem 2rem;
+  border-radius: 5rem;
+  background: var(--gradient);
+  cursor: pointer;
+  color: var(--white);
+  transition: 0.5s;
+  border: 1.5px solid var(--dark-gray);
+}
+
+.header .container .header-action .header-resume {
+  padding: 1.5rem 4rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  color: var(--white);
+  border: 1.5px solid var(--white);
+  transition: 0.5s;
+}
+
+.header .container .header-action .header-connect:hover {
+  border-color: var(--white);
+}
+
+.header .container .header-action .header-resume:hover {
+  border-color: var(--violet);
+}
+
+@media screen and (max-width: 768px) {
+  .header .container img {
+    margin-top: 7rem;
+    width: 20rem;
+  }
+
+  .header .container h1 {
+    width: 98%;
+    font-size: 4rem;
+    margin-top: 2rem;
+  }
+
+  .header .container p {
+    width: 90%;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    margin: 1rem 0;
+  }
+
+  .header .container .header-action {
+    gap: 1.6rem;
+  }
+
+  .header .container .header-action .header-connect {
+    border-radius: 4rem;
+  }
+
+  .header .container .header-action .header-resume {
+    border-radius: 4rem;
+  }
+}
