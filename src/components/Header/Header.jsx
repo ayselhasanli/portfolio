@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import profileImg from "../../assets/portfolio-img.jpg";
-import pdfFile from "../../assets/AyselHasanli.pdf"
+import pdfFile from "../../assets/ayselhasanli.pdf"
 
 const Header = () => {
   return (
