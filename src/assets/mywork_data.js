@@ -4,30 +4,30 @@ import project4_img from "../assets/project_4.jpg";
 import project6_img from "../assets/project_6.jpg";
 import project7_img from "../assets/teminat.az.jpg";
 
-const mywork_data = [ 
+const mywork_data = [
   {
     w_no: 1,
     w_name: "Web develpment",
     w_img: project3_img,
-    w_link: "https://github.com/ayselhasanli/foodiA",
+    w_link: "https://foodia.vercel.app/",
   },
   {
     w_no: 2,
     w_name: "Web develpment",
     w_img: project4_img,
-    w_link: "https://github.com/ayselhasanli/myClean",
-  }, 
+    w_link: "https://my-clean-lyart.vercel.app/",
+  },
   {
     w_no: 3,
     w_name: "Web develpment",
     w_img: project6_img,
-    w_link: "https://github.com/ayselhasanli/eduzone",
+    w_link: "https://eduzone-neon.vercel.app/",
   },
   {
     w_no: 4,
     w_name: "Web develpment",
     w_img: project1_img,
-    w_link: "https://github.com/ayselhasanli/felis-mini-shopping-site",
+    w_link: "https://felis-mini-shopping-site.vercel.app/",
   },
   {
     w_no: 5,
